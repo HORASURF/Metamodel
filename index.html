@@ -19,26 +19,22 @@
 	<script type="text/javascript" src="js/url-polyfill.min.js"></script>
 
 	<!-- zelf toegevoegd style block tbv het creative commons logo -->
-	<style> 
-		#cc-logo {
+	<style>
+		#cc-center {
 		  position: absolute;
-		  top: 10px;
-		  right: 10px;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  text-align: center;
 		  z-index: 9999;
+		  font-size: 0.9em;
 		}
 	</style>
 	
 </head>
 
 <body>
-	<!-- zelf toegevoegd div block tbv het creative commons logo -->
-	<div id="cc-logo">
-	  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
-	    <img alt="Creative Commons License"
-	         src="https://licensebuttons.net/l/by/4.0/88x31.png"
-	         style="border-width:0">
-	  </a>
-	</div>
+
 	<!-- "ui-layout-north" class set (topbar) -->
 	<div class="ui-layout-north">
 		<nav class="navbar navbar-inverse">
@@ -49,6 +45,21 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#myModal" data-toggle="modal" class="go"><span class="i18n-about"></span></a></li>
 				</ul>
+			</div>
+		
+			<!-- zelf toegevoegd div block tbv het creative commons logo -->
+			<div id="cc-center">
+			  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+			    <img alt="Creative Commons License"
+			         src="https://licensebuttons.net/l/by/4.0/88x31.png"
+			         style="border-width:0;">
+			  </a>
+			  <p>
+			    This work is licensed under a 
+			    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+			      Creative Commons Attribution 4.0 International License
+			    </a>.
+			  </p>
 			</div>
 		</nav>
 	</div>
